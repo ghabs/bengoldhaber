@@ -12,7 +12,7 @@ This is the website of Ben Goldhaber. My interests include forecasting, tools fo
 ### Previous Projects
  - Building BI infrastructure for Google Fiber, 2016-2017
  - Improving Google people operations processes, 2014-2015
- - Making Digital textbooks for American Civics education, 2012-2013
+ - Making digital textbooks for American Civics education, 2012-2013
  - Science, Technology, and International Affairs at Georgetown University.
 
-Follow me on <a href="https://twitter.com/BenGoldhaber">Twitter</a> for updates when I post.
+Follow me on <a href="https://twitter.com/BenGoldhaber">Twitter</a> for updates.

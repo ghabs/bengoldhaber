@@ -31,4 +31,9 @@ My goto framework for web app development is Django or Flask. I use flask if I'm
 The debugging tools in VS code are excellent and the library of extensions make adding additional tooling easy and fast.
 
 
+#### Python
+
+- Python 3
+- PyEnv
+
 
