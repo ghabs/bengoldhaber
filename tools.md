@@ -25,14 +25,12 @@ I returned to Evernote after a long time using Google Keep when I found how much
 ### Programming
 
 #### Django/Flask
-My goto framework for web app development is Django or Flask. I use flask if I'm trying to be more minimalist and just want to put up something simple, and Django for everything else.
+My goto framework for web app development is Django or Flask. I use flask for a minimilist API, and Django for more complicated applications.
 
 #### Visual Studio Code
 The debugging tools in VS code are excellent and the library of extensions make adding additional tooling easy and fast.
 
-
 #### Python
-
 - Python 3
 - PyEnv
 

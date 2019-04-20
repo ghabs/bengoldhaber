@@ -2,14 +2,14 @@
 layout: home
 list_title: Posts
 ---
-This is the website of Ben Goldhaber. My interests include forecasting, tools for thinking better, radical markets, and clever hacks.
+This is the website of Ben Goldhaber. My interests include forecasting, tools for thinking better, radical markets, and clever hacks. Right now <a href="/now">I'm thinking a lot about how to facilitate effective coordination at internet-scale</a>.
 
 ### Current Projects
-- Creating a <a href="https://bradfieldcs.com/">better education system</a> for software engineers.
 - Building <a href="http://parallelforecast.com">forecasting infrastructure for x-risks</a>.
 - Experimenting with <a href="https://ought.org">factored cognition</a>.
 
-### Previous Projects
+### Highlights from Previous Projects
+ - Creating a <a href="https://bradfieldcs.com/">better education system</a> for software engineers, 2018-2019
  - Building BI infrastructure for Google Fiber, 2016-2017
  - Improving Google people operations processes, 2014-2015
  - Making digital textbooks for American Civics education, 2012-2013
