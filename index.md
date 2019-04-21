@@ -7,5 +7,3 @@ This is the website of Ben Goldhaber. My interests include forecasting, tools fo
 ### Current Projects
 - Building <a href="http://parallelforecast.com">forecasting infrastructure for x-risks</a>.
 - Experimenting with <a href="https://ought.org">factored cognition</a>.
-
-Follow me on <a href="https://twitter.com/BenGoldhaber">Twitter</a> for updates.

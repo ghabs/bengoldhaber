@@ -1,3 +1,7 @@
+---
+layout: post
+title: Moderation ML
+---
 # Moderation ML
 
 ## Executive Summary
@@ -54,11 +58,11 @@ Following Paul’s idea, create an Active Learning Model that will start out ful
 ## Proposed Algorithms:
 There are a huge number of potential classification algorithms that could be applied to this problem. My interpretation is this is similar to a spam classification problem. Naive Bayes is an effective algorithm for spam, and adding a threshold for labeling Uncertain to ask for manual classification by the user is straightforward. 
 
-    - Example: Each moderator (weighted by their trust from the community) classifies a piece of content as productive/non-productive. The model is trained by then decomposing the signals - words, user rep, upvotes, etc - and labeled. This provides priors for every new piece of content to come in. 
+Example: Each moderator (weighted by their trust from the community) classifies a piece of content as productive/non-productive. The model is trained by then decomposing the signals - words, user rep, upvotes, etc - and labeled. This provides priors for every new piece of content to come in. 
 
 After getting the data, try it on many different ones, but with an emphasis on simplicity of updates. There’s no point in using a highly tuned, Kaggle esque ML technique that can’t be updated by a moderator as more data comes in.
 
-- I’m more bullish on bayesian techniques for discriminating various types of content. This is mostly an intuition, but I think bayes nets is how forum moderation works within people, and approximating that should be the goal of this type of active learning model.
+I’m more bullish on bayesian techniques for discriminating various types of content. This is mostly an intuition, but I think bayes nets is how forum moderation works within people, and approximating that should be the goal of this type of active learning model.
 
 ## Random:
 
