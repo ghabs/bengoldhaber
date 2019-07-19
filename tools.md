@@ -19,7 +19,7 @@ A mood tracking app with a beautiful and simple UI. I've found it helpful for pr
 The OG to do list app, gets all of the little things right and easy to integrate into my workflow.
 
 #### [Evernote](evernote.com)
-I returned to Evernote after a long time using Google Keep when I found how much better the evernote web clipper app. I use evernote as a slipbox, storing all of my tagged and structured notes and bookmarks.
+I returned to Evernote after a long time using Google Keep. I use evernote as a slipbox, storing all of my tagged and structured notes and bookmarks.
 
 
 ### Programming
