@@ -2,6 +2,7 @@
 layout: page
 title: Now
 permalink: /now/
+header: true
 ---
 
 *Updated 4/19/2019*

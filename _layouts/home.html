@@ -8,22 +8,41 @@ layout: default
 
   {{ content }}
   
+
   {%- if site.posts.size > 0 -%}
-    <h2>{{ page.list_title | default: "Posts" }}</h2>
+    <h3>Favorites</h3>
     <ul class="post-list">
       {%- for post in site.posts -%}
+      {% if post.tags contains "favorite"%}
       <li>
-        <h3>
           <a href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-        </h3>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
       </li>
+      {% endif %}
       {%- endfor -%}
     </ul>
 
+    {%- endif -%}
+  </div>
+
+
+  {%- if site.posts.size > 0 -%}
+    <h3>Recent Posts</h3>
+    <ul class="post-list">
+      {%- for post in site.posts limit:5-%}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> 
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      {%- endfor -%}
+      </li>
+      <div class="more_posts"> 
+      <a href="/blog">Browse all posts --></a>
+      </div>
+    </ul>
   {%- endif -%}
 </div>

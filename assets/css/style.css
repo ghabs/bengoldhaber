@@ -1,3 +1,22 @@
+.post-list {
+    margin-left: 20px;
+}
 .post-list li {
     margin-bottom: 5px;
+}
+
+.more_posts {
+    text-align: right;
+}
+
+aside {
+    display: inline;
+    position: absolute;
+    right: 0;
+}
+
+.annotation-button {
+    display: inline;
+    position: absolute;
+    right: 30%;   
 }

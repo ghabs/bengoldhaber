@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Why aren't there more hacks?
-status: "draft feedback"
+status: draft
+tags: favorite
 ---
 
 
 Web security is terrible. It's extremely hard to secure computers from  motivated and competent adversaries. 
 
-So why aren't there more hacks? I look out in the world and there's tons of people and websites that seem trivial to hack, and in an efficient market of hackers you'd expect the hackers to be exploiting these insecurities. The scalable nature of hacking, where a person in Lithuania could plausibly hack into any internet connected computer in the world, implies that the "labor supply" of hacking is global.
+So why aren't there more hacks? I look out in the world and there's tons of people and websites that seem trivial to hack, and in an efficient market of hackers you'd expect the hackers to be exploiting these insecurities.
 
 This is both on the organizational level -  many companies are incompetent at security - and the individual level - the most [commonly used password is still 123456](https://www.cnn.com/2019/04/22/uk/most-common-passwords-scli-gbr-intl/index.html). 
 
@@ -20,10 +21,11 @@ Some plausible explanations:
 
 - Hacking is actually much harder than I think it is,and there are not many people who are good at it.
     - My model of this is that a phishing attack is simple, and that getting someone to click on a link/open a file with a malicious executable is simple, but maybe malicious executables are actually quite hard to build/buy.
+    - The scalable nature of hacking, where a person in Lithuania could plausibly hack into any internet connected computer in the world, implies that the "labor supply" of hacking is global.
 - There is not a large supply of blackhat hackers doing crimes because of normative/moral reasons.
     - Given the scalable nature of hacking I think this is unlikely, as you'd expect the market to quickly select for the least ethical.
 - The opportunity cost for competent hackers is extremely high. You could get a sweet six figure job doing legal security work.
-    - Anecdotally I tried sourcing and hiring top security professionals for a CISO  position, and it was *extremely hard*. Top talent routinely commands $300-500k.
+    - Anecdotally I tried sourcing and hiring top security professionals for a CISO  position, and it was *extremely hard*. Top talent was going for $300-500k.
 
 ## Security Stance
 
