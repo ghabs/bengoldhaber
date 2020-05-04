@@ -5,9 +5,11 @@ permalink: /now/
 header: true
 ---
 
-*Updated 4/19/2019*
+*Updated 5/03/2020*
 
-My work focus at the moment is a project to build forecasting infrastructure and applications. This is split between securing regulatory approval to run real money prediction markets, and building new tooling for creating accurate forecasts.
+I'm working at [HASH](https://hash.ai) - we're building a multi-agent simulation platform. We want to significantly lower the costs to make massive agent based simulations; simulations at city-scale. I spend most of my time either building simulations or working on business strategy/ops. 
+
+I enjoy meeting people who are interested in simulations, forecasting, rationality, software engineering (the list goes on but I feel like this conveys the general memespace), so [please do reach out if you're interested in chatting](mailto:goldhaber.ben@gmail.com). 
 
 ## Then
 
