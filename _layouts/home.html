@@ -3,46 +3,63 @@ layout: default
 ---
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
-  
 
-  {%- if site.posts.size > 0 -%}
-    <h2>Highlights</h2>
+  <section>
+    {%- if site.posts.size > 0 -%}
+    <h2>Recommended</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
-      {% if post.tags contains "favorite"%}
+      {% if post.tags contains "recommended"%}
       <li>
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+        {{ post.excerpt }}
         {%- endif -%}
       </li>
       {% endif %}
       {%- endfor -%}
     </ul>
-
     {%- endif -%}
-  </div>
+</section>
 
-
-  {%- if site.posts.size > 0 -%}
-    <h2>Recent</h2>
-    <ul class="post-list">
-      {%- for post in site.posts limit:5-%}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> 
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      {%- endfor -%}
+<section>
+  <h2>Essays</h2>
+  <ul class="post-list">
+    {%- for essay in site.essays %}
+      <li>
+        <a href="{{ essay.url | relative_url }}">
+          {{ essay.title | escape }}
+        </a>
       </li>
-      <div class="more_posts"> 
-      <a href="/blog">Browse all Essays --></a>
-      </div>
+      {%- endfor -%}
     </ul>
+</section>
+
+<section>
+  {%- if site.posts.size > 0 -%}
+  <h2>Scratchpad</h2>
+  <ul class="post-list">
+    {%- for post in site.posts limit:5 -%}
+    {% unless post.tags contains 'recommended' %}
+
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
+      {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+      {%- endif -%}
+    </li>
+    {% endunless %}
+    {%- endfor -%}
+
+    <div class="more_posts">
+      <a href="/blog">more --></a>
+    </div>
+  </ul>
   {%- endif -%}
+</section>
 </div>

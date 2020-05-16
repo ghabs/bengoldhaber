@@ -2,7 +2,7 @@
 layout: post
 title: Why aren't there more hacks?
 status: draft
-tags: favorite
+tags: open-questions
 ---
 
 
