@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Terms of Service"
+title: "AI Vignette - Terms of Service"
+tags: fiction
 ---
 One of the obvious ways in which the market is not actually Efficient is it’s failure to take advantage of all the talented video game players in the world. These are people who have spent hours a day every day practicing hand eye coordination, pattern matching, and split second decision making. Tyler Cowen says knowledge workers don’t practice like elite athletes; if they did it would look like how top level video game players do.
 

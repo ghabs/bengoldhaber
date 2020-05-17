@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Skin Deep"
+title: "AI Vignette - Skin Deep"
+tags: fiction
 ---
 
 *An AI Vignette*

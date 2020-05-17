@@ -8,7 +8,10 @@ layout: default
 
   {{ content }}
 
-  <section>
+  
+  <div class="grid">
+
+  <section class="panel">
     {%- if site.posts.size > 0 -%}
     <h2>Recommended</h2>
     <ul class="post-list">
@@ -28,20 +31,22 @@ layout: default
     {%- endif -%}
 </section>
 
-<section>
-  <h2>Essays</h2>
+<section class="panel">
+  <h2>Fiction</h2>
   <ul class="post-list">
     {%- for essay in site.essays %}
+    {% if essay.tags contains "fiction"%}
       <li>
         <a href="{{ essay.url | relative_url }}">
           {{ essay.title | escape }}
         </a>
       </li>
+      {%- endif -%}
       {%- endfor -%}
     </ul>
 </section>
 
-<section>
+<section class="panel">
   {%- if site.posts.size > 0 -%}
   <h2>Scratchpad</h2>
   <ul class="post-list">
@@ -62,4 +67,8 @@ layout: default
   </ul>
   {%- endif -%}
 </section>
+
+
+
+</div>
 </div>
