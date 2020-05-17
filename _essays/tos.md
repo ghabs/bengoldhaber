@@ -3,6 +3,9 @@ layout: page
 title: "AI Vignette - Terms of Service"
 tags: fiction
 ---
+
+*An [AI Vignette](/2020/05/17/ai-vignettes/)*
+
 One of the obvious ways in which the market is not actually Efficient is it’s failure to take advantage of all the talented video game players in the world. These are people who have spent hours a day every day practicing hand eye coordination, pattern matching, and split second decision making. Tyler Cowen says knowledge workers don’t practice like elite athletes; if they did it would look like how top level video game players do.
 
 Of course, markets become more efficient over time, and one clever software engineer at GooBook noticed how the skills of Starcraft are just the same skills as being a CEO. You need to manage resources effectively and coordinate units over time, which is the same thing ZuckerPage does (when the companies merged out of fairness the CEOs merged too). One day in 2030 over drinks at SportsPage he brought up that he bet his gaming team would do a better job managing the project then they’re current PM. Unfortunately the video gamers were having too much fun crushing it on Twitch, but they’d already used the gamers as training data for a game playing bot; why not repurpose it?

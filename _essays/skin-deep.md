@@ -4,7 +4,7 @@ title: "AI Vignette - Skin Deep"
 tags: fiction
 ---
 
-*An AI Vignette*
+*An [AI Vignette](/2020/05/17/ai-vignettes/)*
 
 I think the most depressing part isn't that we've become playthings for god like entities, it's that we're play things for god like entities who mostly care that we share their opinions about makeup.
 
