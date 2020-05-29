@@ -8,67 +8,61 @@ layout: default
 
   {{ content }}
 
-  
-  <div class="grid">
-
-  <section class="panel">
-    {%- if site.posts.size > 0 -%}
-    <h2>Recommended</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      {% if post.tags contains "recommended"%}
-      <li>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-        {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {% endif %}
-      {%- endfor -%}
-    </ul>
-    {%- endif -%}
-</section>
-
-<section class="panel">
-  <h2>Fiction</h2>
-  <ul class="post-list">
-    {%- for essay in site.essays %}
-    {% if essay.tags contains "fiction"%}
-      <li>
-        <a href="{{ essay.url | relative_url }}">
-          {{ essay.title | escape }}
-        </a>
-      </li>
+  <div class="section group">
+    <div class="col span_1_of_3">
+      {%- if site.posts.size > 0 -%}
+      <h2>Recommended</h2>
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+        {% if post.tags contains "recommended"%}
+        <li>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+          {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {% endif %}
+        {%- endfor -%}
+      </ul>
       {%- endif -%}
-      {%- endfor -%}
-    </ul>
-</section>
-
-<section class="panel">
-  {%- if site.posts.size > 0 -%}
-  <h2>Scratchpad</h2>
-  <ul class="post-list">
-    {%- for post in site.posts limit:5 -%}
-    {% unless post.tags contains 'recommended' %}
-
-    <li><a href="{{ post.url }}">{{ post.title }}</a>
-      {%- if site.show_excerpts -%}
-      {{ post.excerpt }}
-      {%- endif -%}
-    </li>
-    {% endunless %}
-    {%- endfor -%}
-
-    <div class="more_posts">
-      <a href="/blog">more --></a>
     </div>
-  </ul>
-  {%- endif -%}
-</section>
+    <div class="col span_1_of_3">
+      <h2>Fiction</h2>
+      <ul class="post-list">
+        {%- for essay in site.essays %}
+        {% if essay.tags contains "fiction"%}
+          <li>
+            <a href="{{ essay.url | relative_url }}">
+              {{ essay.title | escape }}
+            </a>
+          </li>
+          {%- endif -%}
+          {%- endfor -%}
+        </ul>
+    </div>
+    <div class="col span_1_of_3">
+      {%- if site.posts.size > 0 -%}
+      <h2>Scratchpad</h2>
+      <ul class="post-list">
+        {%- for post in site.posts limit:5 -%}
+        {% unless post.tags contains 'recommended' %}
+    
+        <li><a href="{{ post.url }}">{{ post.title }}</a>
+          {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {% endunless %}
+        {%- endfor -%}
+    
+        <div class="more_posts">
+          <a href="/blog">more --></a>
+        </div>
+      </ul>
+      {%- endif -%}
+    </div>
+  </div>
 
-
-
-</div>
 </div>
