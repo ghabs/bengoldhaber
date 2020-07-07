@@ -7,4 +7,5 @@ Hi! This is the website of Ben Goldhaber. I made it in order to:
 - Store and display my essays and projects. 
 - Ensure I and I alone have the much sought after bengoldhaber domain name.
 
+For infrequent updates [subscribe to my newsletter](https://tinyletter.com/BenGoldhaber).
 
