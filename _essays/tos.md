@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "AI Vignette - Terms of Service"
 tags: fiction
 ---
