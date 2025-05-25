@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use AI to Write Provably Secure Software - Ben Goldhaber</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            font-weight: 300;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            font-weight: 400;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s ease;
+        }
+        
+        a:hover {
+            border-bottom: 1px solid #3498db;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .back-link {
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        
+        .related-links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        
+        .footnote {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .footnote p {
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            p, li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-link">
+        <a href="index.html">← Back to Ben Goldhaber</a>
+    </div>
+    
+    <h1>Use AI to Write Provably Secure Software</h1>
+    
+    <p>The first vector of disruption from advanced AI systems is likely going to be in cyber. AI is increasing cyberattack capabilities, and misaligned AIs might exploit vulnerabilities in hardware and software systems to self-exfiltrate.</p>
+    
+    <p>It is possible to build dramatically more secure systems than is widely thought possible. Proving specific security properties of codebases, <a href="https://www.darpa.mil/research/programs/translating-all-c-to-rust" target="_blank">rewriting codebases from less secure to more secure languages</a>, or <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5597724/" target="_blank">formally verifying entire systems</a> can reduce the attack surface of software and, at the limit, shifts the cyber balance to defense.</p>
+    
+    <p>This is all possible today, but it takes a tremendous amount of effort from experts<sup>1</sup>. It's simply not feasible to deploy highly secure systems in all the places they're needed given the available supply of talent. With the rise of AI coding agents, this will no longer be true. AI agents could build and maintain formally secure systems, automate the proof generation process, rewrite code into memory safe languages. This cuts the time and costs of creating secure systems by orders of magnitude.</p>
+    
+    <p>This will be a revolution in software engineering - it will require new tooling and new practices, and targeted efforts to<sup>2</sup> remove bottlenecks. But it's also a very real possibility, which the right people could help make happen way faster, making a better more secure cyber (and thus real) world.</p>
+    
+    <div class="related-links">
+        <h2>Related links:</h2>
+        <ul>
+            <li><a href="https://atlascomputing.org/ai-assisted-fv-toolchain.pdf" target="_blank">Atlas Computing</a></li>
+            <li><a href="https://www.aria.org.uk/opportunity-spaces/mathematics-for-safe-ai/safeguarded-ai/" target="_blank">ARIA</a></li>
+            <li><a href="https://theoremlabs.com/" target="_blank">Theorem Labs</a></li>
+        </ul>
+    </div>
+    
+    <div class="footnote">
+        <p><sup>1</sup> For example <a href="https://sel4.systems/" target="_blank">Sel4</a> – a fully formally verified microkernel – took approximately 25-30 person-years.</p>
+        <p><sup>2</sup> likely bottlenecks include the lack of datasets of secure code to train AIs, and efficiently eliciting specifications for secure systems from human designers.</p>
+    </div>
+</body>
+</html>
