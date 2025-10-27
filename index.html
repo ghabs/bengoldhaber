@@ -7,27 +7,68 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Ben Goldhaber</h1>
-    
-    <p class="intro">Hi - I'm Ben Goldhaber, owner of the much coveted bengoldhaber.com domain.</p>
-        
-    <p>I work at <a href="https://www.flf.org/" target="_blank">FLF</a> incubating and supporting teams to scale differentially beneficial technology. I think if we can harness advances in AI to improve civilizational reasoning, coordination, and security, we can collectively steer away from catastrophe and towards an amazing future.</p>
-    
-    <p>Here are a few areas (by no means exhaustive) which I think are particularly important:</p>
-    
-    <ul>
-        <li><a href="provably-secure-software.html">Use AI to Write Provably Secure Software</a></li>
-        <li><a href="ai-forecasting-sensemaking.html">Accelerate AI for Forecasting and Sensemaking</a></li>
-        <li>Implement High Assurance Safety Practices in Frontier AI companies</li>
-        <li><a href="creating-positive-visions.html">Creating Positive Visions for the Future</a></li>
-    </ul>
-    
-    <p><a href="https://bengoldhaber.substack.com/" target="_blank">I write a monthly links list / personal journal / navel gazing exercise</a>. It's a pretty good way to get a sense of the type of stuff I think about and what I like to read.</p>
-    
-    <p>Some of my hobbies include meditation, weightlifting, going to saunas, and spending too much time on <a href="https://x.com/BenGoldhaber" target="_blank">twitter</a>.</p>
-    
+    <!-- About Section -->
+    <section class="about-section">
+        <h1>Ben Goldhaber</h1>
+
+        <p class="intro">Hi - I'm Ben Goldhaber, owner of the much coveted bengoldhaber.com domain.</p>
+
+        <p>I'm currently the Projects Lead at <a href="https://www.flf.org/" target="_blank">FLF</a> incubating and supporting teams working on differentially beneficial technology. If we can harness advances in AI to improve civilizational reasoning, coordination, and security, we can significantly increase our chances for making it to an amazing future.</p>
+
+        <p><a href="https://bengoldhaber.substack.com/" target="_blank">I write a monthly newsletter on substack</a>.
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <h2>Recent projects</h2>
+        <ul class="projects-list">
+            <li><a href="https://aiforhumanreasoning.com/" target="_blank">AI for Human Reasoning Fellowship</a> -- created a fellowship to bring together thirty fellows from diverse backgrounds to explore, research, and develop AI tools to advance epistemics and coordination.</li>
+            <li><a href="https://arxiv.org/abs/2405.06624" target="_blank">Towards Guaranteed Safe AI</a> -- technical roadmapping workshop series for the multi-author position paper on the Guaranteed Safe AI safety area</li>
+            <li><a href="https://far.ai/labs" target="_blank">FAR.Labs</a> -- AI safety research hub hosting community research programs, teams-in-residence, and visitors</li>
+        </ul>
+    </section>
+
+    <!-- Essays Section -->
+    <section class="essays-section">
+        <h2>Essays</h2>
+        <div id="essays-list" class="essays-list">
+            <!-- Essays will be dynamically loaded here -->
+        </div>
+    </section>
+
     <div class="contact">
         <p>I like receiving email about things I'm interested in or should be interested in! You can contact me at <strong>goldhaber dot ben at gmail dot com</strong>.</p>
     </div>
+
+    <script>
+        // Load and display essays
+        fetch('essays.json')
+            .then(response => response.json())
+            .then(essays => {
+                const essaysList = document.getElementById('essays-list');
+
+                essays.forEach(essay => {
+                    const essayItem = document.createElement('div');
+                    essayItem.className = 'essay-item';
+
+                    // Use url for external essays, filename for local ones
+                    const href = essay.external ? essay.url : essay.filename;
+                    const target = essay.external ? ' target="_blank"' : '';
+
+                    essayItem.innerHTML = `
+                        <div class="essay-header">
+                            <h3><a href="${href}"${target}>${essay.title}</a></h3>
+                        </div>
+                        <span class="essay-description">${essay.description}</span>
+                    `;
+
+                    essaysList.appendChild(essayItem);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading essays:', error);
+                document.getElementById('essays-list').innerHTML = '<p>Unable to load essays.</p>';
+            });
+    </script>
 </body>
 </html>

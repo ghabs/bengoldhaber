@@ -1,0 +1,74 @@
+---
+title: "Some Areas I'm Excited About"
+date: "2025-05-25"
+description: "A few areas that I think are particularly important for improving our collective future: provably secure software, AI forecasting, and creating positive visions."
+---
+
+# Some Areas I'm Excited About
+
+I work at FLF incubating and supporting teams to scale differentially beneficial technology. Here are a few areas (by no means exhaustive) which I think are particularly important:
+
+## Use AI to Write Provably Secure Software
+
+The first vector of disruption from advanced AI systems is likely going to be in cyber. AI is increasing cyberattack capabilities, and misaligned AIs might exploit vulnerabilities in hardware and software systems to self-exfiltrate.
+
+It is possible to build dramatically more secure systems. Proving specific security properties of codebases, [rewriting codebases from less secure to more secure languages](https://www.darpa.mil/research/programs/translating-all-c-to-rust), or [formally verifying entire systems](https://pmc.ncbi.nlm.nih.gov/articles/PMC5597724/) can reduce the attack surface of software and, at the limit, shift the cyber balance to defense.
+
+This is all possible today, but it takes a tremendous amount of effort<sup>1</sup>. It's simply not feasible to deploy highly secure systems in all the places they're needed given the available supply of talent. With the rise of AI coding agents, this will no longer be true. AI agents could build and maintain formally secure systems, automate the proof generation process, rewrite code into memory safe languages. This cuts the time and costs of creating secure systems by orders of magnitude.
+
+All of this will require new tooling and new practices and targeted r&d to<sup>2</sup> remove bottlenecks. But the opportunity is available now, and the right people could drive this revolution in software engineering and security.
+
+### Related links:
+
+- [Atlas Computing](https://atlascomputing.org/ai-assisted-fv-toolchain.pdf)
+- [ARIA](https://www.aria.org.uk/opportunity-spaces/mathematics-for-safe-ai/safeguarded-ai/)
+- [Theorem Labs](https://theoremlabs.com/)
+
+## Accelerate AI for Forecasting and Sensemaking
+
+We're in a period where the decisions society writ large, and a few individuals in particular make, will be very consequential for the future of humanity. So, it matters that we get those decisions right.
+
+If we can have the technology to make better forecasts and plans, and to navigate a chaotic information environment, we'll likely all make better decisions, and more good things will in fact happen.
+
+Principled forecasting has long been a quixotic quest of mine. People making rigorous plans, and forecasting the outcomes of those plans *feels* like it should be the thing by which we steer the future, and in fact, there is strong evidence that superforecasters, forecasting aggregators like metaculus and manifold markets, and real money prediction markets, can produce [calibrated forecasts](https://calibration.city/calibration) on important events.
+
+However, despite many attempts, bringing quantitative forecasts into the planning process for projects has not been very successful. They do not seem 1.) flexible enough or 2.) comprehensive enough or 3.) something! to meaningfully shape the planning process, and thus the decision making process.
+
+<div class="sidenote">
+<strong>Sidenote:</strong> the discursive process, where people discuss how they generated their forecasts, how to operationalize a question, in my experience is very useful. I expect the generalizable lesson is that sharing the background model that is used to generate a forecast is much more useful than a single point estimate.
+</div>
+
+I had given up on 'principled forecasting' as an intellectually attractive but ultimately distracting enterprise; however, like in so many other domains, advances in AI might have changed the calculus. There's potential to augment so much of the forecasters workflows:
+
+- Eliciting the implicit models of human forecasters.
+- Producing reference classes and fermi estimates.
+- Formulating and refine high Value of Information questions.
+- Generating scenarios that aid in conditional forecasting.
+
+I also suspect we're already able to [forecast somewhat effectively directly with AI](https://www.forecastbench.org/) and that this will improve fast. If researchers and technologists can build the forecasting systems that are actually useful it would be incredibly impactful
+
+### Example projects:
+
+- [Supercharge Community Notes](https://www.alphaxiv.org/abs/2411.06116v1)
+- [Discourse Graphs](https://discoursegraphs.com/)
+- Prediction Markets that are actually useful; [info-finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html).
+- [Improving group deliberation and sensemaking](https://notebooklm.google.com/notebook/6d721445-f65e-4f79-b6bb-41bc3f88ba79)
+- Building the HCI interfaces that people actually use for all of this.
+
+## Creating Positive Visions for the Future
+
+I've come to believe that one of the biggest things that the world needs hopeful visions for the future. I know, it's a tad saccharine - "what we're missing is hope!" - but having a shared, aesthetic conception of what we (a company, a community, a country) are working towards is incredibly important - it's how we coordinate large groups over time to commons ends.
+
+Michael Nielsen has a [beautiful essay where he describes the value of creating positive visions for shaping the future.](https://michaelnotebook.com/optimism/index.html)
+
+> I've eschewed the language of prediction, focusing instead on imagination and possibility. This contrasts with much AI safety discourse, which is often framed in terms of timelines, probabilities of doom, prediction markets, and so on. I've avoided this predictive viewpoint in part because it's the passive view of an outsider, not a protagonist; and in part because it de-centers imagination. ASI isn't something that happens to us; we control it. Timelines are something we are collectively deciding. To do that well we must see ourselves as active imaginative participants, not merely passive or reactive respondents. The predictive viewpoint should serve the imaginative viewpoint, not vice versa. That's why I've deliberately centered the imaginative viewpoint: imagination is more fundamental than prediction. If people such as Alan Turing and I. J. Good hadn't imagined AGI and ASI we wouldn't be discussing predictions related to them. Imagining the future well is both extraordinarily challenging and an extraordinary opportunity.
+
+> I use the term *hyper-entity* to mean an imagined hypothetical future object or class of objects. AI is just one of many hyper-entities; closely related examples include AGI, ASI, aligned ASI systems, mind uploads, and BCI. Outside AI, examples of hyper-entities include: world government, a city on Mars, utility fog, universal quantum computers, molecular assemblers, prediction markets, dynabooks, cryonic preservation, anyonic quasiparticles, space elevators, topological quantum computers, and carbon removal and sequestration technology. Even on-the-nose jokes like the [Torment Nexus](https://twitter.com/AlexBlechman/status/1457842724128833583) are examples of hyper-entities. Many important objects in our world began as hyper-entities – things like heavier-than-air flying machines, lasers, computers, contraceptive pills, international law, and networked hypertext systems. All were sketched years, decades, or even centuries before we knew how to make them. But they ceased to be hyper-entities when they were actually created, sometimes rather differently than was expected by the people who originally imagined them. By contrast, things like dragons or unicorns, while imagined objects, are *not* examples of hyper-entities, since they aren't usually considered to be future objects. There are related hyper-entities, though: "genetically engineered dragon" is an example.
+
+> The most interesting hyper-entities often require both tremendous design imagination and tremendous depth of scientific understanding to conceive. But once they've been imagined, people can become invested in bringing them into existence. Crucially, they can become *shared* visions. That makes hyper-entities important co-ordination mechanisms. The reason AGI is a subject of current discussion is that the benefits of AGI-the-hyper-entity have come to seem so compelling that enormous networks of power and expertise have formed to bring it into the world. It's become a shared social reality. This is a common pattern with successful hyper-entities. While still imaginary, they may exert far more force than many real objects do. As a result, the futures we can imagine and achieve are strongly influenced by the available supply of hyper-entities. This makes the supply of hyper-entities extremely important: they determine what we can think about together; they are one of the most effective ways to intervene in a system; a healthy supply of hyper-entities helps pull us into good futures. If all we imagine is bad futures that's likely what we'll get.
+
+---
+
+<sup>1</sup> For example [Sel4](https://sel4.systems/) – a fully formally verified microkernel – took approximately 25-30 person-years.
+
+<sup>2</sup> Likely bottlenecks include the lack of datasets of secure code to train AIs, and efficiently eliciting specifications for secure systems from human designers.
