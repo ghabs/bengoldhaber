@@ -441,6 +441,9 @@ blockquote p:last-child { margin-bottom: 0; }
 }
 .footnote p { margin-bottom: 15px; }
 
+/* Mobile dossier image */
+.mobile-dossier { display: none; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
     .page {
@@ -449,6 +452,8 @@ blockquote p:last-child { margin-bottom: 0; }
         gap: 48px;
     }
     .rail { order: 2; position: static; min-height: auto; }
+    .rail .dossier-card { display: none; }
+    .mobile-dossier { display: block; margin: 32px 0; }
     .marg-note { display: none; }
 }
 
