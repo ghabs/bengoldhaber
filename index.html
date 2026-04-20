@@ -4,71 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Goldhaber</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@400;500;600&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
-    <!-- About Section -->
-    <section class="about-section">
-        <h1>Ben Goldhaber</h1>
+    <div class="page">
+        <div class="content">
+            <h1>Ben Goldhaber</h1>
+            <div class="handle">goldhaber.ben · 37.87°n 122.27°w</div>
 
-        <p class="intro">Hi - I'm Ben Goldhaber, owner of the much coveted bengoldhaber.com domain.</p>
+            <div class="intro">
+                <p>Hi — I'm Ben Goldhaber, owner of the much coveted
+                    <span class="marg-host">bengoldhaber.com<span class="marg-note marg-right">registered 2012 · renewed faithfully since</span></span>
+                    domain.
+                </p>
+                <p>I'm a Program Officer at
+                    <span class="marg-host"><a href="https://coefficientgiving.org" target="_blank" rel="noreferrer">Coefficient Giving</a></span>,
+                    building the Safety Framework Development and Implementation (SFDI)
+                    workstream. It focuses on starting projects which encourage, improve,
+                    and provide services for safety and governance work at frontier AI
+                    companies.
+                </p>
+                <p>My main internet presence is
+                    <span class="marg-host"><a href="https://bengoldhaber.substack.com" target="_blank" rel="noreferrer">my blog on substack</a><span class="marg-note marg-right">essays on AI, good reasoning, and the occasional meme</span></span>.
+                </p>
+            </div>
 
-        <p>I'm currently the Projects Lead at <a href="https://www.flf.org/" target="_blank">FLF</a> incubating and supporting teams working on differentially beneficial technology. If we can harness advances in AI to improve civilizational reasoning, coordination, and security, we can significantly increase our chances for making it to an amazing future.</p>
+            <div class="divider">
+                <div class="divider-glyph">&sect;</div>
+                <div class="divider-rule"></div>
+            </div>
 
-        <p><a href="https://bengoldhaber.substack.com/" target="_blank">I write a monthly newsletter on substack</a>.
-    </section>
+            <div class="section-label">Recent public projects</div>
+            <ul class="projects">
+                <li>
+                    <span class="year">2025</span>
+                    <div>
+                        <div class="project-title">
+                            <span class="marg-host"><a href="https://aiforhumanreasoning.com/" target="_blank">AI for Human Reasoning Fellowship</a><span class="marg-note marg-right">~30 fellows · def/acc exploration</span></span>
+                        </div>
+                        <div class="project-desc">Created a fellowship to bring together thirty fellows from diverse backgrounds to explore, research, and develop AI tools to advance epistemics and coordination.</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="year">2024</span>
+                    <div>
+                        <div class="project-title">
+                            <span class="marg-host"><a href="https://arxiv.org/abs/2405.06624" target="_blank">Towards Guaranteed Safe AI</a><span class="marg-note marg-right">formal verification of ASI outputs</span></span>
+                        </div>
+                        <div class="project-desc">Technical roadmapping workshop series for the multi-author position paper on the Guaranteed Safe AI research agenda.</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="year">2023</span>
+                    <div>
+                        <div class="project-title">
+                            <span class="marg-host"><a href="https://far.ai/labs" target="_blank">FAR.Labs</a><span class="marg-note marg-right">Berkeley, CA · est. 2023</span></span>
+                        </div>
+                        <div class="project-desc">AI safety research hub hosting community research programs, teams-in-residence, and visitors.</div>
+                    </div>
+                </li>
+            </ul>
 
-    <!-- Projects Section -->
-    <section class="projects-section">
-        <h2>Recent projects</h2>
-        <ul class="projects-list">
-            <li><a href="https://aiforhumanreasoning.com/" target="_blank">AI for Human Reasoning Fellowship</a> -- created a fellowship to bring together thirty fellows from diverse backgrounds to explore, research, and develop AI tools to advance epistemics and coordination.</li>
-            <li><a href="https://arxiv.org/abs/2405.06624" target="_blank">Towards Guaranteed Safe AI</a> -- technical roadmapping workshop series for the multi-author position paper on the Guaranteed Safe AI safety area.</li>
-            <li><a href="https://far.ai/labs" target="_blank">FAR.Labs</a> -- AI safety research hub hosting community research programs, teams-in-residence, and visitors.</li>
-        </ul>
-    </section>
+            <!-- Essays section -->
+            <div class="divider">
+                <div class="divider-glyph">&#9830;</div>
+                <div class="divider-rule"></div>
+            </div>
 
-    <!-- Essays Section -->
-    <section class="essays-section">
-        <h2>Essays</h2>
-        <div id="essays-list" class="essays-list">
-            <!-- Essays will be dynamically loaded here -->
+            <div class="section-label">Selected writing</div>
+            <ul class="projects">
+                <li>
+                    <span class="year"></span>
+                    <div>
+                        <div class="project-title"><a href="https://bengoldhaber.substack.com/p/the-ball" target="_blank">The Ball</a></div>
+                        <div class="project-desc">Honor demands it.</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="year"></span>
+                    <div>
+                        <div class="project-title"><a href="https://bengoldhaber.substack.com/p/no-real-nattys" target="_blank">No Real Nattys</a></div>
+                        <div class="project-desc">The transhuman future is already here and it's evenly distributed.</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="year"></span>
+                    <div>
+                        <div class="project-title"><a href="https://bengoldhaber.substack.com/p/a-toast-to-love" target="_blank">A Toast to Love</a></div>
+                        <div class="project-desc">Love is not a game.</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="year"></span>
+                    <div>
+                        <div class="project-title"><a href="https://bengoldhaber.substack.com/p/unexpected-things-that-are-people" target="_blank">Unexpected Things that are People</a></div>
+                        <div class="project-desc">Panlegal expressions of personhood.</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="year"></span>
+                    <div>
+                        <div class="project-title"><a href="https://bengoldhaber.substack.com/p/wise-ai-advisors-at-the-hinge-of" target="_blank">Wise AI Advisors at the Hinge of History</a></div>
+                        <div class="project-desc">Coordinating through shared truth.</div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="divider">
+                <div class="divider-glyph">&#10022;</div>
+                <div class="divider-rule"></div>
+            </div>
+
+            <div class="section-label">Correspondence</div>
+            <div class="contact">
+                <p>I like receiving email about things I'm interested in or should be interested in! Unfortunately I receive a lot of them and I can't guarantee a timely reply <span class="mono-inline">:/</span> but you can and should contact me at <strong>goldhaber.ben at gmail dot com</strong>.</p>
+            </div>
         </div>
-    </section>
 
-    <div class="contact">
-        <p>I like receiving email about things I'm interested in or should be interested in! You can contact me at <strong>goldhaber dot ben at gmail dot com</strong>.</p>
+        <aside class="rail rail-dossier">
+            <!-- Dossier card with Bay Area map -->
+            <div class="dossier-card">
+                <div class="dossier-meta">
+                    <span>FILE · 2026-Q2</span>
+                    <span>goldhaber, b.</span>
+                </div>
+                <div class="dossier-photo">
+                    <img src="images/dossier-whiteboard.png" alt="Ben Goldhaber">
+                    <div class="dossier-photo-label">field research · 2024—</div>
+                </div>
+            </div>
+
+            <!-- Sparklines -->
+            <div class="sparkline">
+                <div class="sparkline-head">
+                    <span class="sparkline-label">posts · inkhaven</span>
+                    <span class="sparkline-val">30</span>
+                </div>
+                <svg viewBox="0 0 160 28" width="100%" height="28">
+                    <polyline points="0,28 17.8,24.9 35.6,21.8 53.3,18.7 71.1,12.4 88.9,6.2 106.7,3.1 124.4,1.2 142.2,0.6 160,0" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+                    <circle cx="160" cy="0" r="1.8" fill="#a4322a"/>
+                </svg>
+            </div>
+            <div class="sparkline">
+                <div class="sparkline-head">
+                    <span class="sparkline-label">workshops · hosted</span>
+                    <span class="sparkline-val">10</span>
+                </div>
+                <svg viewBox="0 0 160 28" width="100%" height="28">
+                    <polyline points="0,28 17.8,25.2 35.6,22.4 53.3,19.6 71.1,16.8 88.9,11.2 106.7,8.4 124.4,5.6 142.2,2.8 160,0" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+                    <circle cx="160" cy="0" r="1.8" fill="#a4322a"/>
+                </svg>
+            </div>
+            <div class="sparkline">
+                <div class="sparkline-head">
+                    <span class="sparkline-label">jhānas · attained</span>
+                    <span class="sparkline-val">1</span>
+                </div>
+                <svg viewBox="0 0 160 28" width="100%" height="28">
+                    <polyline points="0,18 8,8 16,22 24,4 32,20 40,10 48,26 56,6 64,24 72,2 80,22 88,12 96,28 104,8 112,20 120,14 128,16 132,15 136,14 140,14 144,14 148,14 152,14 156,14 160,14" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+                    <circle cx="160" cy="14" r="1.8" fill="#a4322a"/>
+                </svg>
+            </div>
+
+            <!-- Polaroid 2 -->
+            <div class="polaroid-with-note">
+                <div class="polaroid" style="transform:rotate(3deg)">
+                    <div class="polaroid-img">
+                        <img src="images/black-rock-city.jpg" alt="Build lead, Black Rock City 2024">
+                    </div>
+                    <div class="polaroid-caption">Build lead, Motel California '24</div>
+                </div>
+                <div class="polaroid-note polaroid-note-right">leading a camp is peak type two fun</div>
+            </div>
+
+            <!-- Polaroid — TI4 -->
+            <div class="polaroid-with-note">
+                <div class="polaroid" style="transform:rotate(-3deg)">
+                    <div class="polaroid-img">
+                        <img src="images/ti4.jpg" alt="TI4">
+                    </div>
+                    <div class="polaroid-caption">Twilight Imperium 4</div>
+                </div>
+                <div class="polaroid-note polaroid-note-right">the greatest game ever made</div>
+            </div>
+
+            <!-- System log -->
+            <div class="dossier-log">
+                <div class="dossier-log-head">· system log</div>
+                <div class="dossier-log-row"><span class="log-time" id="log-utc"></span> uptime ok</div>
+                <div class="dossier-log-row"><span class="log-time">2026-04-20</span> last updated</div>
+            </div>
+
+            <!-- Polaroid 3 -->
+            <div class="polaroid-with-note">
+                <div class="polaroid" style="transform:rotate(-6deg)">
+                    <div class="polaroid-img">
+                        <img src="images/far-labs.jpg" alt="FAR.Labs - Berkeley, CA">
+                    </div>
+                    <div class="polaroid-caption">Berkeley, CA</div>
+                </div>
+                <div class="polaroid-note polaroid-note-right">That's my photo being burned in effigy</div>
+            </div>
+
+            <!-- Polaroid 4 -->
+            <div class="polaroid-with-note">
+                <div class="polaroid" style="transform:rotate(2deg)">
+                    <div class="polaroid-img">
+                        <img src="images/eag-google.jpg" alt="EAG '15">
+                    </div>
+                    <div class="polaroid-caption">EAG '15</div>
+                </div>
+                <div class="polaroid-note polaroid-note-right">hosted it at Google — my first significant foray into EA</div>
+            </div>
+
+            <!-- ASCII art -->
+            <div class="dossier-ascii">
+   ,--.
+  ( oo|   "every long
+  _\=/_   journey begins
+ /  _  \  with a footnote."
+/|__/ \|\
+(  )   (  )
+ ""     ""</div>
+        </aside>
     </div>
 
     <script>
-        // Load and display essays
-        fetch('essays.json')
-            .then(response => response.json())
-            .then(essays => {
-                const essaysList = document.getElementById('essays-list');
+        // Live UTC clock for system log
+        function updateClock() {
+            var el = document.getElementById('log-utc');
+            if (el) {
+                var now = new Date();
+                el.textContent = now.toISOString().replace('T', ' ').slice(0, 19);
+            }
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
 
-                essays.forEach(essay => {
-                    const essayItem = document.createElement('div');
-                    essayItem.className = 'essay-item';
-
-                    // Use url for external essays, filename for local ones
-                    const href = essay.external ? essay.url : essay.filename;
-                    const target = essay.external ? ' target="_blank"' : '';
-
-                    essayItem.innerHTML = `
-                        <div class="essay-header">
-                            <h3><a href="${href}"${target}>${essay.title}</a></h3>
-                        </div>
-                        <span class="essay-description">${essay.description}</span>
-                    `;
-
-                    essaysList.appendChild(essayItem);
-                });
-            })
-            .catch(error => {
-                console.error('Error loading essays:', error);
-                document.getElementById('essays-list').innerHTML = '<p>Unable to load essays.</p>';
-            });
     </script>
 </body>
 </html>
