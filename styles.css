@@ -323,6 +323,22 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 36px 0; }
 
 /* Sparklines */
 .sparkline { margin-bottom: 18px; }
+.sparkline-with-note { position: relative; }
+.sparkline-note {
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    color: var(--sepia);
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateY(4px);
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+.sparkline-with-note:hover .sparkline-note {
+    opacity: 1;
+    transform: translateY(0);
+}
 .sparkline-head {
     display: flex;
     justify-content: space-between;
