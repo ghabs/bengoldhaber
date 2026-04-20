@@ -99,5 +99,29 @@ allEssays.sort((a, b) => {
 const essaysJsonPath = path.join(__dirname, 'essays.json');
 fs.writeFileSync(essaysJsonPath, JSON.stringify(allEssays, null, 2));
 
-console.log(`\nBuild complete! ${files.length} file(s) processed.`);
-console.log(`Generated essays.json with ${allEssays.length} essay(s) (${externalEssays.length} external).`);
+// Fetch Substack post count from sitemap
+async function fetchSubstackPostCount() {
+  try {
+    const res = await fetch(
+      'https://bengoldhaber.substack.com/sitemap.xml'
+    );
+    const xml = await res.text();
+    const postCount = (xml.match(/<loc>[^<]*\/p\/[^<]*<\/loc>/g) || [])
+      .length;
+    const indexPath = path.join(__dirname, 'index.html');
+    let html = fs.readFileSync(indexPath, 'utf-8');
+    html = html.replace(
+      /(<span class="sparkline-label">posts · written<\/span>\s*<span class="sparkline-val">)\d+(<\/span>)/,
+      `$1${postCount}$2`
+    );
+    fs.writeFileSync(indexPath, html);
+    console.log(`Substack post count: ${postCount}`);
+  } catch (err) {
+    console.warn('Could not fetch Substack post count:', err.message);
+  }
+}
+
+fetchSubstackPostCount().then(() => {
+  console.log(`\nBuild complete! ${files.length} file(s) processed.`);
+  console.log(`Generated essays.json with ${allEssays.length} essay(s) (${externalEssays.length} external).`);
+});
