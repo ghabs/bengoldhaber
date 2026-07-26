@@ -213,6 +213,34 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 36px 0; }
 .marg-right::before { left: -16px; }
 .marg-left::before { right: -16px; }
 
+/* Pinned marginalia — for mid-line words. The note floats out to the content
+   column's right margin instead of beside the word, so it never lands on the
+   following text. The host is left unpositioned so the note anchors to
+   .content horizontally, while top:auto keeps it on the word's own line. */
+.content { position: relative; }
+.marg-pin-host {
+    border-bottom: 1px dotted var(--sepia-soft);
+    cursor: help;
+}
+.marg-pin-host .marg-note {
+    top: auto;
+    left: calc(100% + 24px);
+    width: 140px;
+    text-align: left;
+    /* Counteract the one-line drop of a block child in inline flow
+       (intro line-height: 17.5px x 1.65). */
+    margin-top: -29px;
+}
+.marg-pin-host:hover .marg-note {
+    opacity: 1;
+    transform: translateY(0);
+}
+.marg-pin-host .marg-note::before {
+    top: 10px;
+    left: -20px;
+    width: 16px;
+}
+
 /* ---------- Right rail ---------- */
 .rail {
     position: sticky;
@@ -455,6 +483,7 @@ blockquote p:last-child { margin-bottom: 0; }
     .rail .dossier-card { display: none; }
     .mobile-dossier { display: block; margin: 32px 0; }
     .marg-note { display: none; }
+    .marg-pin-host { border-bottom: none; cursor: auto; }
 }
 
 @media (max-width: 600px) {
